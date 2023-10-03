@@ -21,6 +21,9 @@ export class FunStories {
   @Prop({ required: true })
   content: string;
 
+  @Prop({ default: null })
+  description: string;
+
   // -------------------------------------------------------
 
   @Prop({ default: false })

@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString } from 'class-validator';
+import { IsNotEmpty, IsString, IsOptional } from 'class-validator';
 
 export class CreateFunStoriesDto {
   @IsString()
@@ -8,6 +8,10 @@ export class CreateFunStoriesDto {
   @IsString()
   @IsNotEmpty()
   content: string;
+
+  @IsOptional()
+  @IsString()
+  description: string;
 
   @IsString()
   @IsNotEmpty()

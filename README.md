@@ -22,6 +22,7 @@ Create Fun Stories:
 {
     "title": "Title",
     "content": "Content",
+    "description": "Description",
     "secret_key": "SecretKey in file env"
 }
 ```
